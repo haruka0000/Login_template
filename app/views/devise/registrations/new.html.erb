@@ -4,20 +4,17 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true , class: 'form-control',placeholder: 'Email address'%>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
     <% if @minimum_password_length %>
-    <% end %><br />
+    <% end %>
     <%@plchldr = "Password(" + @minimum_password_length.to_s + "characters minimum)" %>
     <%= f.password_field :password, autocomplete: "off", class: 'form-control',placeholder: @plchldr %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" , class: 'form-control',placeholder: 'Password Confirmatuon'%>
   </div>
 
