@@ -1,5 +1,12 @@
 source 'https://rubygems.org'
 
+# 認証処理
+gem 'devise'
+
+# bootstrap
+gem 'bootstrap-sass'
+gem 'bootstrap-sass-extras'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
